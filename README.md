@@ -91,6 +91,32 @@ A **Decision Tree** is a supervised learning algorithm used for classification a
 
 ---
 
+### 5. Support Vector Machine (SVM)
+**Support Vector Machine (SVM)** is a supervised learning algorithm used for binary classification tasks. It finds the optimal hyperplane that separates data points of different classes with the maximum margin.
+
+#### Key Concepts:
+- **Hinge Loss**:
+  
+  $\text{Loss} = \frac{1}{m} \sum_{i=1}^{m} \max(0, 1 - y_i (w \cdot x_i + b))$
+
+- **Regularization**:
+  
+  $\text{Regularization} = \frac{\lambda}{2} ||w||^2$
+
+- **Gradient Descent**:
+  Updates weights and bias iteratively to minimize the hinge loss and regularization term:
+  
+  $w_j = w_j - \alpha \cdot \left( \frac{\partial J}{\partial w_j} + \lambda w_j \right)$
+  
+  $b = b - \alpha \cdot \frac{\partial J}{\partial b}$
+
+#### Features:
+- Suitable for binary classification tasks.
+- Maximizes the margin between classes.
+- Can be extended to non-linear classification using kernel functions.
+  
+---
+
 ## How to Use
 1. Clone the repository:
    ```bash
